@@ -14,7 +14,7 @@ public class ProductListServlet extends HttpServlet {
         int b = 50;
         resp.setContentType("text/html;charset=UTF-8");
         resp.getWriter().printf("<html><body>");
-        for (int i = 0; i < 11; i++) {
+        for (int i = 1; i < 11; i++) {
             Product product = new Product(a+i, "продукт", b+50+i*5);
             resp.getWriter().printf("<h1>" + product.id + " " + product.title + " цена " + product.cost + "</h1>");
         }
